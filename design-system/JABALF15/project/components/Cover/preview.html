@@ -1,0 +1,71 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>JABALF15</title>
+<style>
+  html, body { margin:0; height:100%; }
+  body { background:var(--bg); color:var(--ink); overflow:hidden; }
+  .cv { position:relative; height:288px; overflow:hidden; direction:ltr; text-align:left; }
+  /* the composition: a 480-wide box on the right half of the 960 layout, clear of the name */
+  .cv-art { position:absolute; top:0; left:480px; width:480px; height:288px; overflow:hidden; }
+  .cv-art svg { display:block; width:480px; height:288px; }
+  .cv-gold { fill:var(--gold); }
+  .cv-plate { fill:var(--ink); }
+  .cv-aurora { fill:var(--aurora); }
+  .cv-plasma { fill:var(--plasma); }
+  .cv-emerald { fill:var(--emerald); }
+  .cv-slate { fill:var(--edge-ctl); }
+  .cv-cut { fill:var(--bg); }
+  .cv-blk { rx:var(--r); }
+  .cv-chip { rx:var(--r-sm); }
+  /* a pill: rx = half its height (the rail pills are 20 tall, the cut pills 8) */
+  .cv-pill { rx:10px; }
+  .cv-line { rx:4px; }
+  .cv-words { position:absolute; left:32px; bottom:28px; max-width:440px; }
+  .cv-name { margin:0; max-width:none; font-family:var(--font-display); font-weight:700; font-size:104px; line-height:.95; letter-spacing:0; color:var(--ink); text-wrap:nowrap; }
+  .cv-tag { margin:10px 0 0 2px; max-width:none; font-family:var(--font-body); font-size:14px; line-height:22px; color:var(--muted); direction:rtl; text-align:left; }
+</style>
+</head>
+<body>
+<div class="cv">
+<div class="cv-art" aria-hidden="true">
+<svg viewBox="0 0 480 288" width="480" height="288">
+<!--
+  blocks      gold 160×184 slab (the selected tab, the section title: the first identity colour, largest) · ink 176×112 plate (the white drawing sheet on the dark desk; it flips with the theme so it never vanishes) · aurora 112×56 · plasma 48×56 · emerald 80×40 · edge-ctl 96-wide block bleeding off the right edge — about 31% of 960×288
+  arrangement plates mounted on a desk under one rail: every block hangs from the same line 16 below the rail, gutters of stack (16px), the last block bleeds off the right
+  pattern     pills, from "r-pill لكل ما يُضغط أو يوسم": the tab rail as five pills across the top, the first one gold (selected); the same pill cut out of the slab three times as step lines, with the three numbered discs of ol.steps beside them
+  scales      gutters stack 16px · rail pills 20 tall (rx 10) · corners r 10px, chip r-sm 6px · discs 20px across · cut lines 8 tall (rx 4)
+-->
+<rect class="cv-gold cv-pill" x="16" y="24" width="96" height="20" rx="10"/>
+<rect class="cv-slate cv-pill" x="128" y="24" width="72" height="20" rx="10"/>
+<rect class="cv-slate cv-pill" x="216" y="24" width="104" height="20" rx="10"/>
+<rect class="cv-slate cv-pill" x="336" y="24" width="64" height="20" rx="10"/>
+<rect class="cv-slate cv-pill" x="416" y="24" width="88" height="20" rx="10"/>
+
+<rect class="cv-gold cv-blk" x="16" y="72" width="160" height="184" rx="10"/>
+<circle class="cv-cut" cx="42" cy="104" r="10"/>
+<rect class="cv-cut cv-line" x="64" y="100" width="88" height="8" rx="4"/>
+<circle class="cv-cut" cx="42" cy="140" r="10"/>
+<rect class="cv-cut cv-line" x="64" y="136" width="64" height="8" rx="4"/>
+<circle class="cv-cut" cx="42" cy="176" r="10"/>
+<rect class="cv-cut cv-line" x="64" y="172" width="80" height="8" rx="4"/>
+
+<rect class="cv-plate cv-blk" x="192" y="72" width="176" height="112" rx="10"/>
+<rect class="cv-cut cv-chip" x="204" y="84" width="48" height="16" rx="6"/>
+
+<rect class="cv-aurora cv-blk" x="192" y="200" width="112" height="56" rx="10"/>
+<rect class="cv-plasma cv-blk" x="320" y="200" width="48" height="56" rx="10"/>
+
+<rect class="cv-emerald cv-blk" x="384" y="72" width="80" height="40" rx="10"/>
+<rect class="cv-slate cv-blk" x="384" y="128" width="112" height="128" rx="10"/>
+</svg>
+</div>
+<div class="cv-words">
+<h1 class="cv-name">JABALF15</h1>
+<p class="cv-tag">نظام تصميم المراجع الميدانية العربية</p>
+</div>
+</div>
+</body>
+</html>

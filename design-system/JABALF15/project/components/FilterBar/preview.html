@@ -1,0 +1,25 @@
+<!-- @dsCard group="الجداول والبيانات" height=370 subtitle="شريط البحث والترشيح" -->
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>شريط البحث والترشيح</title>
+<style>body{padding-block:1.25rem}</style>
+</head>
+<body>
+<div class="wrap stack">
+<div class="ctl">
+  <label class="f-q" for="q">بحث بالرمز أو العنوان العربي أو الأصلي
+    <input id="q" type="search" placeholder="مثال: 72 أو رشاشات أو sprinkler" autocomplete="off"></label>
+  <label for="fcat">المجال
+    <select id="fcat"><option value="">كل المجالات</option><option value="C">الكشف والإنذار والأمن (6)</option><option value="F">الكهرباء والطاقة (32)</option></select></label>
+  <label for="ftype">النوع
+    <select id="ftype"><option value="">كل الأنواع</option><option value="C">كود</option><option value="S">معيار</option><option value="R">ممارسة موصى بها</option><option value="G">دليل</option></select></label>
+  <label for="fkind">النسخة
+    <select id="fkind"><option value="">الكل</option><option value="base">الوثائق الأصلية</option><option value="lang">نسخ اللغات</option></select></label>
+</div>
+<label class="chk" for="fmemo"><input type="checkbox" id="fmemo"> الوثائق ذات الملاحظات فقط</label>
+<p class="count" aria-live="polite">يُعرض <b>430</b> من <b>430</b> وثيقة</p>
+</div>
+</body>
+</html>

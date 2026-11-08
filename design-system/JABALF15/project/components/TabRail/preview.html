@@ -1,0 +1,38 @@
+<!-- @dsCard group="الصفحة" height=216 subtitle="شريط التبويبات" -->
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>شريط التبويبات</title>
+</head>
+<body>
+<nav class="rail" aria-label="أقسام المرجع"><div class="wrap" role="tablist">
+<button class="tab" role="tab" id="t-map" data-tab="map" aria-selected="true" aria-controls="p-map">الخريطة</button>
+<button class="tab" role="tab" id="t-alarm" data-tab="alarm" aria-selected="false" aria-controls="p-alarm" tabindex="-1">نظام الإنذار</button>
+<button class="tab" role="tab" id="t-smoke" data-tab="smoke" aria-selected="false" aria-controls="p-smoke" tabindex="-1">منبّهات الدخان</button>
+<button class="tab" role="tab" id="t-ext" data-tab="ext" aria-selected="false" aria-controls="p-ext" tabindex="-1">طفايات الحريق</button>
+<button class="tab" role="tab" id="t-codes" data-tab="codes" aria-selected="false" aria-controls="p-codes" tabindex="-1">فهرس NFPA</button>
+<button class="tab" role="tab" id="t-gloss" data-tab="gloss" aria-selected="false" aria-controls="p-gloss" tabindex="-1">المسرد</button>
+</div></nav>
+<main>
+<section class="panel" id="p-map" role="tabpanel" aria-labelledby="t-map"><div class="wrap">
+<p class="lead">هذا المرجع يجمع المرفقات كلها في مادة عربية واحدة: ما كان منها بالإنجليزية عُرِّب، وما كان بالعربية ضُمَّ بمحتواه كما هو، ورُتِّب الجميع بحيث يشرح كل جزء ما يليه.</p>
+</div></section>
+<section class="panel" id="p-alarm" role="tabpanel" aria-labelledby="t-alarm" hidden><div class="wrap">
+<p class="lead">وحدة التحكم بإنذار الحريق هي عقل النظام: تراقب كل المدخلات وتتحكم بكل المخرجات.</p>
+</div></section>
+<section class="panel" id="p-smoke" role="tabpanel" aria-labelledby="t-smoke" hidden><div class="wrap">
+<p class="lead">منبّهات الدخان قصة نجاح سلامة المساكن من الحريق في الثلاثين سنة الماضية.</p>
+</div></section>
+<section class="panel" id="p-ext" role="tabpanel" aria-labelledby="t-ext" hidden><div class="wrap">
+<p class="lead">ما يفعله الشخص في الدقيقة الأولى: يقرأ الطفاية، ويختار الوسيط، ويشغّلها بأربع خطوات، ويعرف متى يتركها ويخرج.</p>
+</div></section>
+<section class="panel" id="p-codes" role="tabpanel" aria-labelledby="t-codes" hidden><div class="wrap">
+<p class="lead">فهرس إصدارات NFPA LINK المنسوخ بتاريخ 4 أكتوبر 2026، وفيه 430 وثيقة.</p>
+</div></section>
+<section class="panel" id="p-gloss" role="tabpanel" aria-labelledby="t-gloss" hidden><div class="wrap">
+<p class="lead">المصطلحات التي وردت في الصور والدليل واللوحات والفهرس، بترجمة واحدة ثابتة في المرجع كله.</p>
+</div></section>
+</main>
+</body>
+</html>
